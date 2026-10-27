@@ -23,6 +23,18 @@ const workshops = [
     ],
     accent: "sage",
   },
+  {
+    number: "03",
+    title: "Make something",
+    summary: "Create a tangible item from start to finish.",
+    details: [
+      ["Duration", "3 hours"],
+      ["Example price", "$75, materials included"],
+      ["Date", "Next date to be announced"],
+      ["Format", "In person at Small Hours Studio"],
+    ],
+    accent: "coral",
+  },
 ];
 
 function ArrowUpRight() {
@@ -87,7 +99,7 @@ export default function Page() {
           <a href="#workshops">Workshops</a>
         </nav>
         <a className="header-link" href="#workshops">
-          Find a workshop <ArrowUpRight />
+          Find a workshop Make something <ArrowUpRight />
         </a>
       </header>
 
