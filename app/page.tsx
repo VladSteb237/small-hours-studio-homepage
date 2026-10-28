@@ -109,7 +109,7 @@ export default function Page() {
             <span className="eyebrow-dot" /> A community workshop space
           </p>
           <h1 id="hero-heading">
-            Make time to
+            Make time to Test Home
             <br />
             <em>make something.</em>
           </h1>
