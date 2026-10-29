@@ -1,41 +1,4 @@
-const workshops = [
-  {
-    number: "01",
-    title: "Print something good",
-    summary: "Turn a small sketch into a print worth making room for.",
-    details: [
-      ["Duration", "3 hours"],
-      ["Example price", "$65, materials included"],
-      ["Date", "Next date to be announced"],
-      ["Format", "In person at Small Hours Studio"],
-    ],
-    accent: "terracotta",
-  },
-  {
-    number: "02",
-    title: "A garden in a pot",
-    summary: "Make a little green space, even if your yard is a windowsill.",
-    details: [
-      ["Duration", "2 hours"],
-      ["Example price", "$45, materials included"],
-      ["Date", "Next date to be announced"],
-      ["Format", "In person at Small Hours Studio"],
-    ],
-    accent: "sage",
-  },
-  {
-    number: "03",
-    title: "Make something",
-    summary: "Create a tangible item from start to finish.",
-    details: [
-      ["Duration", "3 hours"],
-      ["Example price", "$75, materials included"],
-      ["Date", "Next date to be announced"],
-      ["Format", "In person at Small Hours Studio"],
-    ],
-    accent: "coral",
-  },
-];
+import { workshops } from "../lib/workshops";
 
 function ArrowUpRight() {
   return (
@@ -57,7 +20,7 @@ function ArrowUpRight() {
 
 function WorkshopCard({ workshop }: { workshop: (typeof workshops)[number] }) {
   return (
-    <article className={`workshop-card ${workshop.accent}`}>
+    <a className={`workshop-card ${workshop.accent}`} href={`/workshops/${workshop.slug}`}>
       <div className="card-topline">
         <span className="workshop-number">{workshop.number}</span>
         <span className="card-mark" aria-hidden="true" />
@@ -79,7 +42,7 @@ function WorkshopCard({ workshop }: { workshop: (typeof workshops)[number] }) {
         <strong>{workshop.details[1][1].split(",")[0]}</strong>
         <span>materials included</span>
       </div>
-    </article>
+    </a>
   );
 }
 
