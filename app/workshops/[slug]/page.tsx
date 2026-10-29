@@ -33,7 +33,9 @@ export default async function WorkshopPage({
         </a>
       </header>
 
-      <section className={`workshop-detail shell ${workshop.accent}`} aria-labelledby="workshop-title">
+      <section
+        className={`workshop-detail shell ${workshop.accent}`}
+        aria-labelledby="workshop-title">
         <a className="back-link workshop-back-link" href="/#workshops">
           <span aria-hidden="true">←</span> Back to workshops
         </a>
@@ -45,7 +47,11 @@ export default async function WorkshopPage({
           </div>
           <div className="workshop-detail-copy">
             <p>{workshop.description}</p>
-            <p><strong>Hosted by</strong><br />{workshop.host}</p>
+            <p>
+              <strong>Hosted by</strong>
+              <br />
+              {workshop.host}
+            </p>
           </div>
         </div>
         <dl className="workshop-details workshop-detail-facts">
@@ -56,7 +62,9 @@ export default async function WorkshopPage({
             </div>
           ))}
         </dl>
-        <p className="demo-note">Demo studio · Illustrative prices only · Dates to be announced</p>
+        <p className="demo-note">
+          Demo studio · Illustrative prices only · Dates to be announced
+        </p>
       </section>
 
       <footer className="site-footer shell">
@@ -65,7 +73,9 @@ export default async function WorkshopPage({
           <span>Studio</span>
         </a>
         <p>Make room for making.</p>
-        <a className="back-link" href="/#top">Back to top <span aria-hidden="true">↑</span></a>
+        <a className="back-link" href="/#top">
+          Back to top <span aria-hidden="true">↑</span>
+        </a>
       </footer>
     </main>
   );
