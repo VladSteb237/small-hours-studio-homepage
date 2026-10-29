@@ -93,7 +93,7 @@ export default function Page() {
           <div className="spark spark-one">✳</div>
           <div className="spark spark-two">✳</div>
           <div className="art-caption">
-            Make
+            Make More
             <br />
             room.
           </div>
