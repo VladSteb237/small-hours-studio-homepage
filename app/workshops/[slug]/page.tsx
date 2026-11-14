@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { workshops } from "../../../lib/workshops";
+import { InterestForm } from "../../../components/interest-form";
 
 export function generateStaticParams() {
   return workshops.map((workshop) => ({ slug: workshop.slug }));
@@ -65,6 +66,7 @@ export default async function WorkshopPage({
         <p className="demo-note">
           Demo studio · Illustrative prices only · Dates to be announced
         </p>
+        <InterestForm slug={workshop.slug} />
       </section>
 
       <footer className="site-footer shell">
